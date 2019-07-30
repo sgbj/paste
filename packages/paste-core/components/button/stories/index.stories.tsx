@@ -2,6 +2,8 @@ import * as React from 'react';
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {withKnobs, select, text, boolean} from '@storybook/addon-knobs';
+import styled from '@emotion/styled';
+import css from '@styled-system/css';
 import {LogoIcon} from '@twilio-paste/icons/src/react/LogoIcon';
 import {Button} from '../src';
 import {ButtonVariants, ButtonSizes, ButtonTabIndexes} from '../src/types';
@@ -10,8 +12,23 @@ const ButtonSizeOptions = ['default', 'small', 'icon', 'reset'];
 const ButtonVariantOptions = ['primary', 'secondary', 'destructive', 'destructive_link', 'link', 'reset'];
 const ButtonTabIndexOptions = [0, -1];
 
+const Boop = styled('div')(
+  css({
+    height: 50,
+    fontSize: [4, 5, 6],
+    color: 'primary',
+    bg: 'gray',
+    '&:hover': {
+      color: 'secondary',
+    },
+  })
+);
+
 storiesOf('Components|Button', module)
   .addDecorator(withKnobs)
+  .add('TEST', () => {
+    return <Boop>11111</Boop>;
+  })
   .add('Text only', () => {
     const tabIndexOptions = select('tabIndex', ButtonTabIndexOptions, 0) as ButtonTabIndexes;
     return (

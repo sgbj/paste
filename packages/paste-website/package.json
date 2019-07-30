@@ -20,6 +20,9 @@
     "@mdx-js/mdx": "^1.0.23",
     "@mdx-js/react": "^1.0.23",
     "@mdx-js/tag": "^0.20.3",
+    "styled-system": "^5.0.16",
+    "@styled-system/css": "^5.0.16",
+    "@styled-system/theme-get": "^5.0.16",
     "@twilio-paste/heading": "^0.3.0",
     "@twilio-paste/theme": "^0.3.0",
     "gatsby": "^2.13.4",
@@ -32,8 +35,7 @@
     "gatsby-transformer-json": "^2.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "styled-system": "^4.1.0"
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2",

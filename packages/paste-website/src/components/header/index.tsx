@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Link} from 'gatsby';
 import styled from '@emotion/styled';
-import {themeGet} from 'styled-system';
+import themeGet from '@styled-system/theme-get';
 import {StyledHeader} from './styled-header';
 
 interface HeaderProps {

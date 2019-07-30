@@ -21,11 +21,13 @@
   },
   "peerDependencies": {
     "@emotion/styled": "^10.0.14",
-    "@twilio-paste/theme-tokens": "^0.2.2",
+    "styled-system": "^5.0.16",
+    "@styled-system/css": "^5.0.16",
+    "@styled-system/theme-get": "^5.0.16",
+    "@twilio-paste/theme-tokens": "^0.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-uid": "^2.2.0",
-    "styled-system": "^4.1.0"
+    "react-uid": "^2.2.0"
   },
   "devDependencies": {
     "@twilio-labs/svg-to-react": "^1.0.1",

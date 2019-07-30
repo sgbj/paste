@@ -1,28 +1,26 @@
 import styled from '@emotion/styled';
-import {themeGet} from 'styled-system';
+import themeGet from '@styled-system/theme-get';
 
-// Link
-export const StyledLink = styled.a`
-  color: ${themeGet('textColors.colorTextLink')};
-  text-decoration: none;
-  outline: none;
+export const StyledLink = styled.a(props => ({
+  color: themeGet('textColors.colorTextLink')(props),
+  textDecoration: 'none',
+  outline: 'none',
 
-  &:hover {
-    color: ${themeGet('textColors.colorTextLinkHover')};
-    text-decoration: underline;
-  }
+  '&:hover': {
+    color: themeGet('textColors.colorTextLinkHover')(props),
+    textDecoration: 'underline',
+  },
 
-  &:focus,
-  &:active {
-    box-shadow: 0 0 0 4px rgba(0, 117, 195, 0.5);
-    text-decoration: underline;
-  }
+  '&:focus, &:active': {
+    boxShadow: '0 0 0 4px rgba(0, 117, 195, 0.5)',
+    textDecoration: 'underline',
+  },
 
-  &:focus {
-    color: ${themeGet('textColors.colorTextLinkFocus')};
-  }
+  '&:focus': {
+    color: themeGet('textColors.colorTextLinkFocus')(props),
+  },
 
-  &:active {
-    color: ${themeGet('textColors.colorTextLinkActive')};
-  }
-`;
+  '&:active': {
+    color: themeGet('textColors.colorTextLinkActive')(props),
+  },
+}));

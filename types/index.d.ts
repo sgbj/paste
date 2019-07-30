@@ -2,6 +2,8 @@ import {SpaceProps} from 'styled-system';
 import {DefaultTheme} from '@twilio-paste/theme-tokens';
 
 declare module '@styled-system/should-forward-prop';
+declare module '@styled-system/css';
+declare module '@styled-system/theme-get';
 declare module 'gulp-theo';
 declare module 'color';
 

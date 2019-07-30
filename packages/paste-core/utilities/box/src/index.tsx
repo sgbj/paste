@@ -10,10 +10,10 @@ import {
   MinWidthProps,
   space,
   style,
-  themeGet,
   width,
   WidthProps,
 } from 'styled-system';
+import themeGet from '@styled-system/theme-get';
 import {ThemeShape} from '@twilio-paste/theme-tokens';
 import {SpacingThemeProps} from '../../../../../types';
 

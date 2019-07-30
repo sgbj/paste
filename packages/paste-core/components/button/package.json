@@ -24,10 +24,11 @@
   "peerDependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "@twilio-paste/spinner": "^0.1.2",
+    "@styled-system/css": "^5.0.16",
+    "@styled-system/theme-get": "^5.0.16",
+    "@twilio-paste/spinner": "^0.1.4",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-system": "^4.1.0"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@twilio-paste/spinner": "^0.1.4",

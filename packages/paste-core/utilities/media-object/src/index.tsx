@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import {space, Theme, themeGet} from 'styled-system';
+import {space, Theme} from 'styled-system';
+import themeGet from '@styled-system/theme-get';
 import {PaddingThemeProps} from '../../../../../types';
 
 interface MediaObjectProps extends Theme {

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {graphql, useStaticQuery, Link} from 'gatsby';
 import {Global, css} from '@emotion/core';
 import styled from '@emotion/styled';
-import {themeGet} from 'styled-system';
+import themeGet from '@styled-system/theme-get';
 import {Theme} from '@twilio-paste/theme';
 import {Header} from '../header';
 

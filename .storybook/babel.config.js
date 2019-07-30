@@ -14,7 +14,12 @@ const getPresets = isDev => [
   ],
 ];
 
-const BASE_PLUGINS = ['macros', '@babel/proposal-class-properties', '@babel/proposal-object-rest-spread'];
+const BASE_PLUGINS = [
+  'macros',
+  '@babel/proposal-class-properties',
+  '@babel/proposal-object-rest-spread',
+  '@styled-system/babel-plugin',
+];
 
 module.exports = {
   env: {
