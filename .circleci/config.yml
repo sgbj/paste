@@ -83,8 +83,11 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
-      - attach_workspace:
-          at: ~/
+      - run: yarn
+      - run: yarn bootstrap
+      - run:
+          name: Run package builds
+          command: yarn build
       - run:
           name: Run type checker
           command: yarn type-check
