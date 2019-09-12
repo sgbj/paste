@@ -47,5 +47,6 @@ export const InlineCode = styled.code<{}>`
   background-color: ${themeGet('backgroundColors.colorBackground')};
   border-radius: ${themeGet('radii.borderRadius20')};
   color: ${themeGet('textColors.colorText')};
+  font-size: ${themeGet('fontSizes.fontSize20')};
   padding: ${themeGet('space.space20')} ${themeGet('space.space30')};
 `;
