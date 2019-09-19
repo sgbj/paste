@@ -8,6 +8,7 @@ import {Text} from '@twilio-paste/text';
 import {Heading} from '../Heading';
 import {TWILIO_BLUE} from '../../constants';
 import {TwilioIcon} from '../icons/TwilioIcon';
+import {P} from '../Typography';
 
 const StyledFooter = styled.footer`
   margin-top: 96px;
@@ -17,10 +18,6 @@ const StyledFooter = styled.footer`
 
 const Flex = styled.div`
   display: flex;
-`;
-
-const StyledCopyright = styled(Text)`
-  text-align: center;
 `;
 
 const StyledFooterLogo = styled(TwilioIcon)`
@@ -41,28 +38,28 @@ const SiteFooter: React.FC<{}> = () => {
             <Heading as="h4" headingStyle="headingStyle50">
               Support
             </Heading>
-            <p>
+            <P>
               If you need support,{' '}
               <Anchor href="https://github.com/twilio-labs/paste/issues">please open a new issue</Anchor> in our GitHub
               repository. Please try to provide as much detail as possible in your issue.
-            </p>
+            </P>
           </Box>
           <Box ml="space50">
             <Heading as="h4" headingStyle="headingStyle50">
               Contributing
             </Heading>
-            <p>
+            <P>
               The Paste design system is open source and contributions are welcome.{' '}
               <Anchor href="https://github.com/twilio-labs/paste">Check out the project on GitHub</Anchor> to learn more
               about contributing.
-            </p>
+            </P>
           </Box>
         </Flex>
       </Box>
-      <StyledCopyright marginTop="space120">
+      <Text marginTop="space120" textAlign="center">
         <StyledFooterLogo color={TWILIO_BLUE} display="block" size={30} />
         Copyright &copy; 2019 Twilio, Inc.
-      </StyledCopyright>
+      </Text>
     </StyledFooter>
   );
 };

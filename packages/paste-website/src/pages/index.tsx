@@ -33,7 +33,6 @@ const IndexPage: React.FC<{}> = (): React.ReactElement => {
   return (
     <SiteWrapper>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>{SiteMetaDefaults.TITLE}</title>
         <link rel="canonical" href="https://paste.twilio.design" />
         <meta name="description" content={SiteMetaDefaults.DESCRIPTION} />
